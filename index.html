@@ -183,10 +183,10 @@
         <br/>
     <h1><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman'">Dynamic Scene Reconstruction from Single Landscape Image Using 4D Gaussian in the Wild</p></h1>
     <br/>
-    <h2><p style="color:gray;font-size:0.9em;text-align:center; font-family: 'Times New Roman'">In-Hwan Jin*, Haesoo Choo*, Seong-Hun Jeong, Park Heemoon, Junghwan Kim, Oh-joon Kwon, Kyeongbo Kong</p></h2>
+    <h2><p style="color:gray;font-size:0.9em;text-align:center; font-family: 'Times New Roman'">In-Hwan Jin*, Haesoo Choo*, Seong-Hun Jeong, Kyeongbo Kong</p></h2>
     <h2><p style="color:gray;font-size:0.6em;text-align:center; font-family: 'Times New Roman'">*: Equal Contribution</p></h2>
     <br/>
-    <h2><p style="color:gray;font-size:0.8em;text-align:center; font-family: 'Times New Roman'">Pukyong National University, Pusan National University, DMStudio</p></h2>
+    <h2><p style="color:gray;font-size:0.8em;text-align:center; font-family: 'Times New Roman'">Pukyong National University, Pusan National University</p></h2>
     <br/>
     <div style="border: 2px solid white; border-radius: 15px; padding: 10px;width:1100px; margin:auto"></div>
         <!--
@@ -329,28 +329,8 @@
     </div>
 	
     <br/>
-    <br/>
-    <br/>
-	<h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;"> Overview video </h1>
-    <br/>
-	<div style="text-align:center;">
-	<iframe width="800" height="600" src="https://www.youtube.com/embed/2W_FrQTUihM?si=mpBf0YXLJnrq6Qyh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    	</div>
-	
 
     <br/>
-<!--     <center>
-    <img src="static/images/NeurIPS_fig_1.png" alt="My Image" width="1000">
-    <h3><p style="font-size:0.9em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">
-        <strong>Figure Explain:</strong>
-        Need to Explain Figure 
-        <strong>(a)</strong> is blra blra
-        <br/>
-        <br/>
-    </p></h3> -->
-
-    <br/>
-<!--     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1000px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)"> -->
         <br/>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Dynamic Scene Video</h1>
         <br/>
@@ -369,16 +349,13 @@
     <br/>
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
     <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
-	    Based on the outstanding performance of 3D Gaussian splatting, recent multi-view 3D modeling studies have expanded to 4D Gaussians. 
-	    By jointly learning the temporal axis with 3D Gaussians, it is possible to reconstruct more realistic and immersive 4D scenes from multi-view landscape images. 
-	    However, obtaining multi-view images that accurately reflect the overall motion in the wild is extremely challenging. 
-	    In the dynamic scene video field, pseudo-3D representation methods combine with single-image animation techniques, which allows elements to move and render new scenes from different camera perspectives. 
-	    Layered Depth Images (LDIs), a simplified 3D representation of separating a single image into depth-based layers, have limitations in reconstructing complex scenes, and artifacts can occur when continuous elements like fluids are separated into layers. 
-	    Furthermore, due to its implicit modeling of 3D space, the output may be limited to videos in the 2D domain, potentially reducing their versatility. 
-	    This paper proposes representing a complete 3D space for dynamic scene videos by modeling explicit representations, specifically 4D Gaussians, from a single image. 
-	    The framework is focused on optimizing 3D Gaussians by generating multi-view images from a single image and creating 3D motion to optimize 4D Gaussians. 
-	    A key aspect is consistent 3D motion estimation, which aligns common motion across multi-view images to bring 3D space motion closer to actual motions. 
-	    Our model shows the ability to deliver realistic immersion in the wild landscape images through various experiments and metrics.</p></h3>
+	    Recent research in multi-view 3D modeling has expanded to 4D Gaussians by jointly learning the temporal axis within a 3D Gaussian space, enabling the reconstruction of more realistic 4D scenes from diverse landscape images. 
+	    However, obtaining multi-view images that accurately reflect movements from all angles in real-world environments remains challenging. 
+	    In the dynamic scene video field, Layered Depth Images (LDIs) are used to render new scenes from different camera perspectives, but they have limitations in reconstructing complex scenes and can produce artifacts when separating continuous elements like fluids. 
+	    This paper proposes a method to represent a complete 3D space for dynamic scene video by modeling 4D Gaussians from a single image. 
+	    The framework generates multi-view images and optimizes the 4D Gaussians through 3D motion. 
+	    Consistent 3D motion estimation aligns common animations across multi-view images to approximate actual motion. 
+	    Various experiments demonstrate that the proposed model can achieve realistic immersion in natural landscape images.</p></h3>
         <br/><p id="method">
     </div>
  
@@ -398,7 +375,7 @@
 	    In this context, the proposed <strong>3D Motion Refinement Module (3D-MRM)</strong> ensures consistent 3D motion across multi-views. 
 	    <strong>(c)</strong> Using the refined 3D Gaussians and generated 3D motion, 4D Gaussians are refined for changes in position, rotation, and scaling over time.</p></h3>
         <br/>
-        <img src="static/images/image_final_2.png" alt="My Image" width="1000">
+        <img src="static/images/image01.png" alt="My Image" width="1000">
         <br/>
 	    <br>
 	    <br>
